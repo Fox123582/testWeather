@@ -14,7 +14,7 @@ class ForecastList extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
-        color: AppColors.cardBackground.withOpacity(0.5),
+        color: AppColors.cardBackground.withAlpha(128),
         borderRadius: BorderRadius.circular(20),
       ),
       child: ListView.separated(

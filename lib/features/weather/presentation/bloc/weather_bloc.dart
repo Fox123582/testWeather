@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/entities/weather.dart';
 import '../../domain/repositories/weather_repository.dart';
 
-// Events
 abstract class WeatherEvent extends Equatable {
   @override
   List<Object?> get props => [];
@@ -19,7 +18,6 @@ class FetchByCity extends WeatherEvent {
   List<Object?> get props => [city];
 }
 
-// States
 abstract class WeatherState extends Equatable {
   @override
   List<Object?> get props => [];
