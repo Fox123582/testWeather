@@ -33,12 +33,14 @@ class WeatherMainPage extends StatelessWidget {
                           context.read<WeatherBloc>().add(FetchByLocation());
                         },
                         color: AppColors.primary,
-                        child: ListView(
-                          padding: const EdgeInsets.only(top: 20, bottom: 40),
+                        child: Column(
                           children: [
+                            const SizedBox(height: 10),
                             WeatherInfoCard(weather: state.weather),
-                            const SizedBox(height: 40),
-                            ForecastList(forecast: state.weather.forecast),
+                            const SizedBox(height: 30),
+                            Expanded(
+                              child: ForecastList(forecast: state.weather.forecast),
+                            ),
                           ],
                         ),
                       );

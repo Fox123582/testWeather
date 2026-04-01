@@ -20,7 +20,7 @@ class WeatherRemoteDataSourceImpl implements WeatherRemoteDataSource {
         'current_weather': true,
         'daily': 'weathercode,temperature_2m_max,temperature_2m_min,relative_humidity_2m_max',
         'timezone': 'auto',
-        'forecast_days': 14,
+        'forecast_days': 16,
       },
     );
     return response.data;

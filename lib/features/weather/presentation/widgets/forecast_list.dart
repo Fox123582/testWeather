@@ -18,8 +18,6 @@ class ForecastList extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       child: ListView.separated(
-        shrinkWrap: true,
-        physics: const NeverScrollableScrollPhysics(),
         padding: const EdgeInsets.all(15),
         itemCount: forecast.length,
         separatorBuilder: (context, index) => const Divider(
